@@ -1,0 +1,39 @@
+<script type="text/javascript">
+
+    var phy = parseInt(prompt("Enter a marks of Physics :"));
+    var che = parseInt(prompt("Enter a marks of Chemistry :"));
+    var bio = parseInt(prompt("Enter a marks of Biology :"));
+    var math = parseInt(prompt("Enter a marks of Mathematics  :"));
+    var com = parseInt(prompt("Enter a marks of Computer :"));
+    
+    var Total,per;
+
+    Total = phy + che + bio + math + com;
+    document.write("Total = " +Total);
+
+    document.write("<br>");
+
+    per = (Total*100)/500;
+    document.write("Percentage = " +per);
+
+    document.write("<br>");
+
+    if(per >= 90){
+        document.write("A gread");
+    }
+    else if(per >= 80){
+        document.write("B gread");
+    }
+    else if(per >= 70){
+        document.write("C gread");
+    }
+    else if(per >= 60){
+        document.write("D gread");
+    }
+    else if(per >= 50){
+        document.write("E gread");
+    }else{
+        document.write("Fail"); 
+    }
+
+</script>
